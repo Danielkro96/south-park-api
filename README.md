@@ -9,7 +9,7 @@ This application was built for fun with a Flask framework and a Gunicorn WSGI se
 
 ### Routes
 
-> **GET /** 
+> **GET /random** 
         Retrieve a random episode.
    
 > **GET /random/season/<specific_season>** 
