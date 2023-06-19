@@ -3,7 +3,7 @@ from flask import Flask, redirect
 import episodes as e
 
 
-def generate_random_episode(start, end):
+def generate_random_episode(start: int, end: int):
     random_season: int = randint(start, end)
     random_episode: int = randint(1, len(e.seasons[random_season]))
     generated_episode: str = e.seasons[random_season][random_episode]
@@ -20,7 +20,7 @@ def re_route():
 
 @app.get("/random")
 def random():
-    return generate_random_episode(1, 5)
+    return generate_random_episode(1, 25)
 
 
 @app.get("/random/season/<int:specific_season>")
