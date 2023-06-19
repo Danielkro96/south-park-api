@@ -1,7 +1,7 @@
 # south-park-api
-An api that retrieves a random episode of the series South Park. 
+This application features an API that retrieves a random episode from the popular series South Park.
 
-This application was built for fun with a Flask framework and a Gunicorn WSGI server.
+It is built using the Flask framework and powered by a Gunicorn WSGI server.
 
 ### Can also: 
 - retrieve a random episode from a specific season.
