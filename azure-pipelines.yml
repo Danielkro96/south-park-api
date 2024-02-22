@@ -3,6 +3,12 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+parameters:
+- name: succeed
+  displayName: Succeed or fail
+  type: boolean
+  default: false
+
 trigger:
 - main
 
