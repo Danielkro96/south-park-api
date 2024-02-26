@@ -3,12 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-parameters:
-- name: succeed
-  displayName: Succeed or fail
-  type: boolean
-  default: false
-
 trigger:
 - main
 
@@ -19,7 +13,5 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    ls
-    echo See https://aka.ms/yaml
+- script: ls
   displayName: 'Run a multi-line script'
